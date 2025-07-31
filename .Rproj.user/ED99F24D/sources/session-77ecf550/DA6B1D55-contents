@@ -1,0 +1,75 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Make navbar taller for big logo */
+.navbar {
+  min-height: 50px !important;
+}
+
+/* Remove ALL size constraints on the logo */
+.navbar-brand img {
+  height: 60px !important;
+  width: auto !important;
+  max-height: none !important;  /* REMOVE MAX HEIGHT LIMIT */
+  max-width: none !important;   /* REMOVE MAX WIDTH LIMIT */
+  /*min-height: 180px !important; /* FORCE MINIMUM HEIGHT */
+}
+
+/* Also remove constraints on the container */
+.navbar-brand {
+  max-height: none !important;
+  max-width: none !important;
+  height: auto !important;
+  padding: 0 !important;
+}
+
+/* Make title smaller so it fits */
+.navbar-title {
+  font-family: 'Pinyon Script', cursive !important;
+  font-size: 45px !important;
+  color: #333333 !important;
+  margin-left: 20px !important;
+}
+
+/* Make nav links TINY */
+.navbar-nav .nav-link {
+  font-size: 11px !important;
+  padding: 4px 8px !important;
+}
+
+/* Hide page titles completely */
+.quarto-title-block {
+  display: none !important;
+}
+
+/* Your button styles */
+.content-block,
+.upload-section {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-navcast {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.positive {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.negative {
+  color: #dc3545;
+  font-weight: 600;
+}nt-weight: 600;
+}

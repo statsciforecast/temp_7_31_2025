@@ -1,0 +1,71 @@
+# project:
+#   type: website
+#   output-dir: _site
+# 
+# website:
+#   title: "Thea Portfolio Analytics"
+#   navbar:
+#     logo: logo.png
+#     logo-alt: "NAVcast Logo"
+#     background: light
+#     
+#         
+#   page-footer:
+#     center: |
+#       Copyright 2025, NAVcast Module
+#     background: light
+#     
+# format:
+#   html:
+#     theme: cosmo
+#     css: navbar-custom.css
+#     page-layout: full
+#     toc: true
+#     toc-depth: 5
+#     toc-expand: 5
+#     toc-location: left
+#     toc-title: "Contents"
+#     smooth-scroll: true
+#     
+# execute:
+#   echo: false
+#   warning: false
+#   
+# resources:
+#   - logo.png
+
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Thea Portfolio Analytics"
+  favicon: logo.png  # ADD THIS LINE
+  navbar:
+    logo: logo.png
+    logo-alt: "NAVcast Logo"
+    background: light
+        
+  page-footer:
+    center: |
+      Copyright 2025, NAVcast Module
+    background: light
+    
+format:
+  html:
+    theme: cosmo
+    css: navbar-custom.css
+    page-layout: full
+    toc: true
+    toc-depth: 5
+    toc-expand: 5
+    toc-location: left
+    toc-title: "Contents"
+    smooth-scroll: true
+    
+execute:
+  echo: false
+  warning: false
+  
+resources:
+  - logo.png

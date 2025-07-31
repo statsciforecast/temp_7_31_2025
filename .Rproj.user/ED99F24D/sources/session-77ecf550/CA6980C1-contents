@@ -1,0 +1,29 @@
+---
+title: "Thea Portfolio Analytics"
+resources:
+  - html_docs/
+format:
+  html:
+    toc: true
+    toc-depth: 5
+    toc-expand: 5
+    toc-location: left
+    toc-title: "Contents"
+---
+
+# 3 Fund Analysis
+::: {.callout-note collapse="true" icon="false"}
+## Results: MCMC, Simplified, & Simulation Matching
+::: {.callout-tip collapse="true" appearance="simple" icon="false"}
+### Fund 1 
+::: {.callout-tip collapse="true" appearance="simple" icon="false"}
+#### MCMC Analysis
+:::
+::: {.callout-tip collapse="true" appearance="simple" icon="false"}
+#### Simplified Output
+:::
+::: {.callout-tip collapse="true" appearance="simple" icon="false"}
+#### MCMC Analysis - Data Matching Simulations
+:::
+:::
+:::

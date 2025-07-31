@@ -1,0 +1,70 @@
+# NAVcast Brand Configuration
+color:
+  palette:
+    # Primary colors
+    navcast-gray: "#6c757d"
+    navcast-light: "#f8f9fa"
+    navcast-border: "#dee2e6"
+    navcast-dark: "#333333"
+    navcast-accent: "#5a6268"
+    
+  # Applied colors
+  primary: navcast-gray
+  secondary: navcast-accent
+  background: white
+  foreground: navcast-dark
+  
+typography:
+  fonts:
+    - family: "Pinyon Script"
+      source: google
+    - family: "Inter"
+      source: google
+      
+  # Font assignments
+  base: "Inter"
+  headings: "Inter"
+  monospace: "monospace"
+  
+  # Font sizes
+  base-font-size: "16px"
+  h1-font-size: "2.5rem"
+  h2-font-size: "2rem"
+  h3-font-size: "1.75rem"
+  
+  # Line heights
+  line-height: 1.6
+  headings-line-height: 1.2
+  
+logo:
+  small: logo.png
+  medium: logo.png
+  large: logo.png
+  
+# Bootstrap-specific customizations
+defaults:
+  bootstrap:
+    defaults:
+      # Navbar customization
+      navbar-bg: white
+      navbar-fg: "#333333"
+      navbar-padding-y: 1rem
+      navbar-padding-x: 0
+      navbar-brand-font-size: 60px
+      
+      # Link styles
+      link-decoration: none
+      link-color: "#6c757d"
+      link-hover-color: "#5a6268"
+      
+      # Border and spacing
+      border-color: "#dee2e6"
+      border-width: 1px
+      
+      # Card and content blocks
+      card-border-color: "#dee2e6"
+      card-bg: "#f8f9fa"
+      
+      # Code blocks
+      code-bg: "#f8f9fa"
+      code-color: "#6c757d"
