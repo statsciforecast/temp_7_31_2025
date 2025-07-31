@@ -1,0 +1,2 @@
+html_docs/*.mp4 filter=lfs diff=lfs merge=lfs -text
+html_docs/*.html filter=lfs diff=lfs merge=lfs -text
