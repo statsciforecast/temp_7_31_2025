@@ -4,6 +4,10 @@ resources:
   - html_docs/
 ---
 
+::: {style="background-color: #ffeeee; border: 2px solid red; padding: 10px; text-align: center; margin-bottom: 30px;"}
+<strong style="color: red; font-size: 20px;">FOR FIDELITY EYES ONLY</strong>
+:::
+
 # Intro
 
 -   This page provides insight into three relatively young funds with minimal distributions to date
@@ -14,14 +18,17 @@ resources:
 
     -   Simulations of similar styled funds with their respective modeling results
 
--   We also provide a few stylized simulation examples at the end
+-   We also provide a few stylized simulation examples at the end ...
 
 # Executive Summary
+
+...
 
 # Three Young Fund Analysis
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Standard Portfolio Overview Analysis
+
 [View full results screen ↗](html_docs/real_data_portfolio/portfolio_details_real_data.html){target="_blank"}
 
 ```{=html}
@@ -87,10 +94,47 @@ resources:
 
 ::: {.callout-tip collapse="true" appearance="simple" icon="false"}
 #### MCMC Analysis
+
+[View full results screen ↗](html_docs/2023_fund_real_data/mcmc_results_for_site.html){target="_blank"}
+
+```{=html}
+<iframe src="html_docs/2023_fund_real_data/mcmc_results_for_site.html" width="100%" height="600px"></iframe>
+```
 :::
 
 ::: {.callout-tip collapse="true" appearance="simple" icon="false"}
 #### MCMC Analysis - Data Matching Simulations
+
+[View full results screen ↗](html_docs/2023_fund_simulations/mcmc_results_for_site.html){target="_blank"}
+
+```{=html}
+<iframe src="html_docs/2023_fund_simulations/mcmc_results_for_site.html" width="100%" height="600px"></iframe>
+```
 :::
 :::
 :::
+
+# Stylized Example Simulations
+
+...
+
+# Future Visions
+
+-   Currently, we need to develop a very robust quality control process
+
+-   The next step would likely be running models over the weekend and providing results on the following Monday with daily naive updates through the week
+
+-   At a later stage, we envision user uploads, and on-command modeling (something like the video)
+
+<!-- ```{=html} -->
+<!-- <video width="100%" height="auto" autoplay loop muted> -->
+<!--   <source src="html_docs/videos/continuous_example_clip.mp4" type="video/mp4"> -->
+<!--   Your browser does not support the video tag. -->
+<!-- </video> -->
+
+```{=html}
+<video width="100%" height="auto" autoplay loop muted controls>
+  <source src="html_docs/videos/continuous_example_clip.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+```
