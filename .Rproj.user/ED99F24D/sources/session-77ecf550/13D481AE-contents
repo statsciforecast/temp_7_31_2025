@@ -1,14 +1,16 @@
+
+
 # project:
 #   type: website
 #   output-dir: _site
-# 
+#   
 # website:
 #   title: "Thea Portfolio Analytics"
+#   favicon: logo.png
 #   navbar:
 #     logo: logo.png
 #     logo-alt: "NAVcast Logo"
 #     background: light
-#     
 #         
 #   page-footer:
 #     center: |
@@ -26,6 +28,11 @@
 #     toc-location: left
 #     toc-title: "Contents"
 #     smooth-scroll: true
+#     grid:
+#       sidebar-width: 200px    # Narrower sidebar
+#       body-width: 1100px      # Wider body
+#       margin-width: 50px      # Smaller margins
+#       gutter-width: 1rem      # Space between sidebar and content
 #     
 # execute:
 #   echo: false
@@ -37,10 +44,10 @@
 project:
   type: website
   output-dir: _site
-
+  
 website:
   title: "Thea Portfolio Analytics"
-  favicon: logo.png  # ADD THIS LINE
+  favicon: logo.png
   navbar:
     logo: logo.png
     logo-alt: "NAVcast Logo"
@@ -59,9 +66,8 @@ format:
     toc: true
     toc-depth: 5
     toc-expand: 5
-    toc-location: left
+    toc-location: right
     toc-title: "Contents"
-    smooth-scroll: true
     
 execute:
   echo: false

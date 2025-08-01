@@ -1,21 +1,21 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Inter:wght@400;500;600;700&display=swap');
 
-/* Make navbar taller for big logo */
+/* Make navbar appropriate height for logo */
 .navbar {
-  min-height: 50px !important;
+  min-height: 70px !important;
+  padding: 0.5rem 0 !important;
 }
 
-/* Remove ALL size constraints on the logo */
+/* Logo styling */
 .navbar-brand img {
   height: 60px !important;
   width: auto !important;
-  max-height: none !important;  /* REMOVE MAX HEIGHT LIMIT */
-  max-width: none !important;   /* REMOVE MAX WIDTH LIMIT */
-  /*min-height: 180px !important; /* FORCE MINIMUM HEIGHT */
+  max-height: none !important;
+  max-width: none !important;
 }
 
-/* Also remove constraints on the container */
+/* Logo container */
 .navbar-brand {
   max-height: none !important;
   max-width: none !important;
@@ -23,7 +23,7 @@
   padding: 0 !important;
 }
 
-/* Make title smaller so it fits */
+/* Title in Pinyon Script */
 .navbar-title {
   font-family: 'Pinyon Script', cursive !important;
   font-size: 45px !important;
@@ -31,18 +31,19 @@
   margin-left: 20px !important;
 }
 
-/* Make nav links TINY */
+/* Navigation links */
 .navbar-nav .nav-link {
-  font-size: 11px !important;
-  padding: 4px 8px !important;
+  font-size: 14px !important;
+  padding: 0.5rem 1rem !important;
+  font-family: 'Inter', sans-serif !important;
 }
 
-/* Hide page titles completely */
+/* Hide page titles since they're in the navbar */
 .quarto-title-block {
   display: none !important;
 }
 
-/* Your button styles */
+/* Content block styling from your Shiny app */
 .content-block,
 .upload-section {
   background-color: #f8f9fa;
@@ -52,6 +53,7 @@
   margin-bottom: 20px;
 }
 
+/* Button styling */
 .btn-navcast {
   background-color: #6c757d;
   color: white;
@@ -61,8 +63,16 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
+  transition: background-color 0.2s;
+  font-family: 'Inter', sans-serif;
 }
 
+.btn-navcast:hover {
+  background-color: #5a6268;
+  color: white;
+}
+
+/* Utility classes */
 .positive {
   color: #28a745;
   font-weight: 600;
@@ -71,5 +81,23 @@
 .negative {
   color: #dc3545;
   font-weight: 600;
-}nt-weight: 600;
+}
+
+/* Ensure good spacing for main content */
+main.content {
+  padding-top: 2rem;
+}
+
+/* TOC styling */
+nav.toc {
+  font-size: 0.9rem;
+}
+
+/* High DPI support for logo */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi) {
+  .navbar-brand img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
 }

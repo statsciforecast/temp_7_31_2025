@@ -2,26 +2,93 @@
 title: "Thea Portfolio Analytics"
 resources:
   - html_docs/
-format:
-  html:
-    toc: true
-    toc-depth: 5
-    toc-expand: 5
-    toc-location: left
-    toc-title: "Contents"
 ---
 
-# 3 Fund Analysis
+# Intro
+
+-   This page provides insight into three relatively young funds with minimal distributions to date
+
+-   We provide a straightforward portfolio summary analysis followed by:
+
+    -   Extensive modeling results
+
+    -   Simulations of similar styled funds with their respective modeling results
+
+-   We also provide a few stylized simulation examples at the end
+
+# Executive Summary
+
+# Three Young Fund Analysis
+
 ::: {.callout-note collapse="true" icon="false"}
-## Results: MCMC, Simplified, & Simulation Matching
+## Standard Portfolio Overview Analysis
+[View full results screen ↗](html_docs/real_data_portfolio/portfolio_details_real_data.html){target="_blank"}
+
+```{=html}
+<iframe src="html_docs/real_data_portfolio/portfolio_details_real_data.html" width="100%" height="600px"></iframe>
+```
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Extensive Results: MCMC, & Simulation Matching
+
 ::: {.callout-tip collapse="true" appearance="simple" icon="false"}
-### Fund 1 
+### Fund 1 (2019 Vintage)
+
+::: {.callout-tip collapse="true" appearance="simple" icon="false"}
+#### MCMC Analysis
+
+[View full results screen ↗](html_docs/2019_fund_real_data/mcmc_results_for_site.html){target="_blank"}
+
+```{=html}
+<iframe src="html_docs/2019_fund_real_data/mcmc_results_for_site.html" width="100%" height="600px"></iframe>
+```
+:::
+
+::: {.callout-tip collapse="true" appearance="simple" icon="false"}
+#### MCMC Analysis - Data Matching Simulations
+
+[View full results screen ↗](html_docs/2019_fund_simulations/mcmc_results_for_site.html){target="_blank"}
+
+[View data generating configuration ↗](html_docs/2019_fund_simulations/fund_configuration_summary.html){target="_blank"}
+
+```{=html}
+<iframe src="html_docs/2019_fund_simulations/mcmc_results_for_site.html" width="100%" height="600px"></iframe>
+```
+:::
+:::
+
+::: {.callout-tip collapse="true" appearance="simple" icon="false"}
+### Fund 2 (2021 Vintage)
+
+::: {.callout-tip collapse="true" appearance="simple" icon="false"}
+#### MCMC Analysis
+
+[View full results screen ↗](html_docs/2021_fund_real_data/mcmc_results_for_site.html){target="_blank"}
+
+```{=html}
+<iframe src="html_docs/2021_fund_real_data/mcmc_results_for_site.html" width="100%" height="600px"></iframe>
+```
+:::
+
+::: {.callout-tip collapse="true" appearance="simple" icon="false"}
+#### MCMC Analysis - Data Matching Simulations
+
+[View full results screen ↗](html_docs/2021_fund_simulations/mcmc_results_for_site.html){target="_blank"}
+
+```{=html}
+<iframe src="html_docs/2021_fund_simulations/mcmc_results_for_site.html" width="100%" height="600px"></iframe>
+```
+:::
+:::
+
+::: {.callout-tip collapse="true" appearance="simple" icon="false"}
+### Fund 3 (2023 Vintage)
+
 ::: {.callout-tip collapse="true" appearance="simple" icon="false"}
 #### MCMC Analysis
 :::
-::: {.callout-tip collapse="true" appearance="simple" icon="false"}
-#### Simplified Output
-:::
+
 ::: {.callout-tip collapse="true" appearance="simple" icon="false"}
 #### MCMC Analysis - Data Matching Simulations
 :::

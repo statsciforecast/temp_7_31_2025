@@ -1,0 +1,121 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Fund Configuration Summary</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f5f5f5;
+            }
+            h1 {
+                text-align: center;
+                color: #1976d2;
+                margin-bottom: 30px;
+            }
+            .card {
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            .global-config {
+                border-left: 4px solid #1976d2;
+            }
+            .fund-differences {
+                border-left: 4px solid #666;
+            }
+            h2 {
+                color: #1976d2;
+                margin-top: 0;
+            }
+            .section {
+                margin-bottom: 20px;
+            }
+            .section-title {
+                background-color: #e3f2fd;
+                padding: 10px;
+                border-radius: 4px;
+                margin-bottom: 10px;
+                cursor: pointer;
+                user-select: none;
+            }
+            .section-content {
+                padding-left: 20px;
+            }
+            .param-row {
+                display: flex;
+                justify-content: space-between;
+                padding: 5px 0;
+                border-bottom: 1px solid #eee;
+            }
+            .param-name {
+                font-weight: 500;
+            }
+            .param-value {
+                color: #666;
+            }
+            .diff-row {
+                display: grid;
+                grid-template-columns: 2fr 1fr 1fr;
+                gap: 10px;
+                padding: 8px;
+                margin: 5px 0;
+                background-color: #f5f5f5;
+                border-radius: 4px;
+            }
+            .diff-value {
+                text-align: right;
+            }
+            .fund-value {
+                font-weight: bold;
+                color: #1976d2;
+            }
+            .no-differences {
+                text-align: center;
+                color: #4caf50;
+                font-size: 18px;
+                padding: 20px;
+            }
+            .timestamp {
+                text-align: center;
+                color: #666;
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+            .ht-indicator {
+                background-color: #ff9800;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 4px;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+            .collapsible {
+                overflow: hidden;
+                transition: max-height 0.3s ease-out;
+            }
+        </style>
+        <script>
+            function toggleSection(sectionId) {
+                const section = document.getElementById(sectionId);
+                const arrow = document.getElementById(sectionId + '-arrow');
+                if (section.style.display === 'none' || section.style.display === '') {
+                    section.style.display = 'block';
+                    arrow.innerHTML = '▼';
+                } else {
+                    section.style.display = 'none';
+                    arrow.innerHTML = '▶';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Fund Configuration Summary</h1>
+    <div class="timestamp">Generated on: 2025-07-31 20:04:28</div><div class="ht-indicator" style="text-align: center;">Volatility Model: Constant Volatility (no h_t process)</div><div class="card global-config"><h2>Global Configuration</h2><div class="section"><div class="section-title" onclick="toggleSection('section-0')"><span id="section-0-arrow">▼</span> Market Parameters</div><div id="section-0" class="section-content"><div class="param-row"><span class="param-name">Years:</span><span class="param-value">6</span></div><div class="param-row"><span class="param-name">Cumulative Return (%):</span><span class="param-value">135</span></div><div class="param-row"><span class="param-name">Overall Volatility (%):</span><span class="param-value">20</span></div></div></div><div class="section"><div class="section-title" onclick="toggleSection('section-1')"><span id="section-1-arrow">▼</span> Fund Parameters</div><div id="section-1" class="section-content"><div class="param-row"><span class="param-name">Fund Target Return (%):</span><span class="param-value">450</span></div><div class="param-row"><span class="param-name">Beta:</span><span class="param-value">2</span></div><div class="param-row"><span class="param-name">Fund σ Annualized (%):</span><span class="param-value">43</span></div></div></div><div class="section"><div class="section-title" onclick="toggleSection('section-2')"><span id="section-2-arrow">▼</span> Comparable Asset Parameters</div><div id="section-2" class="section-content"><div class="param-row"><span class="param-name">Comparable Target Return (%):</span><span class="param-value">175</span></div><div class="param-row"><span class="param-name">Market Loading:</span><span class="param-value">1.20</span></div><div class="param-row"><span class="param-name">Fund Loading:</span><span class="param-value">0.1150</span></div><div class="param-row"><span class="param-name">Comparable Volatility (%):</span><span class="param-value">10</span></div></div></div><div class="section"><div class="section-title" onclick="toggleSection('section-3')"><span id="section-3-arrow">▼</span> Cash Flow Parameters</div><div id="section-3" class="section-content"><div class="param-row"><span class="param-name">Distribution Speed:</span><span class="param-value">0.002000</span></div><div class="param-row"><span class="param-name">Distribution Noise:</span><span class="param-value">0.8000</span></div><div class="param-row"><span class="param-name">Contribution Change Points:</span><span class="param-value">100,270</span></div><div class="param-row"><span class="param-name">Contribution Expected Counts:</span><span class="param-value">32,10</span></div><div class="param-row"><span class="param-name">Contribution Amounts Expectations:</span><span class="param-value">3.3,2</span></div><div class="param-row"><span class="param-name">Contribution Amounts Variation:</span><span class="param-value">16,2.56</span></div><div class="param-row"><span class="param-name">Distribution Change Points:</span><span class="param-value">50,270</span></div><div class="param-row"><span class="param-name">Distribution Expected Counts:</span><span class="param-value">0,16</span></div></div></div><div class="section"><div class="section-title" onclick="toggleSection('section-4')"><span id="section-4-arrow">▼</span> Reporting Parameters</div><div id="section-4" class="section-content"><div class="param-row"><span class="param-name">GP Smoothing Factor:</span><span class="param-value">0.8600</span></div><div class="param-row"><span class="param-name">Reporting Noise:</span><span class="param-value">0.0600</span></div></div></div></div><div class="card fund-differences"><h2>Fund-Specific Configuration Differences</h2><div class="section"><div class="section-title" onclick="toggleSection('fund-section-0')"><span id="fund-section-0-arrow">▶</span> Fund 1</div><div id="fund-section-0" class="section-content" style="display: none;"><div class="diff-row"><div>Fund-specific Seed:</div><div class="diff-value">Global: Global seed + 0</div><div class="diff-value fund-value">Fund: 5</div></div></div></div><div class="section"><div class="section-title" onclick="toggleSection('fund-section-1')"><span id="fund-section-1-arrow">▶</span> Fund 2</div><div id="fund-section-1" class="section-content" style="display: none;"><div class="diff-row"><div>Fund-specific Seed:</div><div class="diff-value">Global: Global seed + 1</div><div class="diff-value fund-value">Fund: 13</div></div></div></div><div class="section"><div class="section-title" onclick="toggleSection('fund-section-2')"><span id="fund-section-2-arrow">▶</span> Fund 3</div><div id="fund-section-2" class="section-content" style="display: none;"><div class="diff-row"><div>Fund-specific Seed:</div><div class="diff-value">Global: Global seed + 2</div><div class="diff-value fund-value">Fund: 14</div></div></div></div></div><div class="card" style="background-color: #f9f9f9; font-size: 14px;"><p><strong>Global Seed:</strong> 42</p><p><strong>Number of Funds:</strong> 3</p><p><strong>Scaling Factor (USD MM):</strong> 1</p><p><strong>Volatility Model:</strong> Constant Volatility</p></div></body></html>
