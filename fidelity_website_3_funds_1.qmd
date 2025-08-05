@@ -29,10 +29,10 @@ resources:
 ::: {.callout-note collapse="true" icon="false"}
 ## Standard Portfolio Overview Analysis
 
-[View full results screen ↗](html_docs/real_data_portfolio/portfolio_details_real_data.html){target="_blank"}
+[View full results screen ↗](html_docs/real_data_portfolio/portfolio_details_new_graphs.html){target="_blank"}
 
 ```{=html}
-<iframe src="html_docs/real_data_portfolio/portfolio_details_real_data.html" width="100%" height="600px"></iframe>
+<iframe src="html_docs/real_data_portfolio/portfolio_details_new_graphs.html" width="100%" height="600px"></iframe>
 ```
 :::
 
@@ -45,10 +45,10 @@ resources:
 ::: {.callout-tip collapse="true" appearance="simple" icon="false"}
 #### MCMC Analysis
 
-[View full results screen ↗](html_docs/2019_fund_real_data/mcmc_results_for_site.html){target="_blank"}
+[View full results screen ↗](html_docs/2019_fund_real_data/mcmc_results_2019_real_data_294_time_points.html){target="_blank"}
 
 ```{=html}
-<iframe src="html_docs/2019_fund_real_data/mcmc_results_for_site.html" width="100%" height="600px"></iframe>
+<iframe src="html_docs/2019_fund_real_data/mcmc_results_2019_real_data_294_time_points.html" width="100%" height="600px"></iframe>
 ```
 :::
 
@@ -71,10 +71,10 @@ resources:
 ::: {.callout-tip collapse="true" appearance="simple" icon="false"}
 #### MCMC Analysis
 
-[View full results screen ↗](html_docs/2021_fund_real_data/mcmc_results_for_site.html){target="_blank"}
+[View full results screen ↗](html_docs/2021_fund_real_data/mcmc_results_2021_real_data_214_time_points.html){target="_blank"}
 
 ```{=html}
-<iframe src="html_docs/2021_fund_real_data/mcmc_results_for_site.html" width="100%" height="600px"></iframe>
+<iframe src="html_docs/2021_fund_real_data/mcmc_results_2021_real_data_214_time_points.html" width="100%" height="600px"></iframe>
 ```
 :::
 
@@ -95,10 +95,10 @@ resources:
 ::: {.callout-tip collapse="true" appearance="simple" icon="false"}
 #### MCMC Analysis
 
-[View full results screen ↗](html_docs/2023_fund_real_data/mcmc_results_for_site.html){target="_blank"}
+[View full results screen ↗](html_docs/2023_fund_real_data/mcmc_results_2023_real_data_126_time_points.html){target="_blank"}
 
 ```{=html}
-<iframe src="html_docs/2023_fund_real_data/mcmc_results_for_site.html" width="100%" height="600px"></iframe>
+<iframe src="html_docs/2023_fund_real_data/mcmc_results_2023_real_data_126_time_points.html" width="100%" height="600px"></iframe>
 ```
 :::
 
