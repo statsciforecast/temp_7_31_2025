@@ -5,7 +5,7 @@ resources:
 ---
 
 ::: {style="background-color: #ffeeee; border: 2px solid red; padding: 10px; text-align: center; margin-bottom: 30px;"}
-<strong style="color: red; font-size: 20px;">FOR FIDELITY EYES ONLY</strong>
+<strong style="color: red; font-size: 20px;">FOR FIDELITY & WESTCAP EYES ONLY</strong>
 :::
 
 # Intro
@@ -55,12 +55,12 @@ resources:
 ::: {.callout-tip collapse="true" appearance="simple" icon="false"}
 #### MCMC Analysis - Data Matching Simulations
 
-[View full results screen ↗](html_docs/2019_fund_simulations/mcmc_results_for_site.html){target="_blank"}
+[View full results screen ↗](html_docs/2019_fund_simulations/mcmc_results_for_site_no_returns.html){target="_blank"}
 
 [View data generating configuration ↗](html_docs/2019_fund_simulations/fund_configuration_summary.html){target="_blank"}
 
 ```{=html}
-<iframe src="html_docs/2019_fund_simulations/mcmc_results_for_site.html" width="100%" height="600px"></iframe>
+<iframe src="html_docs/2019_fund_simulations/mcmc_results_for_site_no_returns.html" width="100%" height="600px"></iframe>
 ```
 :::
 :::
@@ -81,10 +81,10 @@ resources:
 ::: {.callout-tip collapse="true" appearance="simple" icon="false"}
 #### MCMC Analysis - Data Matching Simulations
 
-[View full results screen ↗](html_docs/2021_fund_simulations/mcmc_results_for_site.html){target="_blank"}
+[View full results screen ↗](html_docs/2021_fund_simulations/mcmc_results_no_returns.html){target="_blank"}
 
 ```{=html}
-<iframe src="html_docs/2021_fund_simulations/mcmc_results_for_site.html" width="100%" height="600px"></iframe>
+<iframe src="html_docs/2021_fund_simulations/mcmc_results_no_returns.html" width="100%" height="600px"></iframe>
 ```
 :::
 :::
