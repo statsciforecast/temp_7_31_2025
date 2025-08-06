@@ -22,7 +22,6 @@ resources:
 
 -   Simulations provide further evidence of correctly modeling the generated fund values and data generating parameter value choices
 
-# Executive Summary
 
 ...
 
