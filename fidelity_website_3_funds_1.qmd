@@ -8,23 +8,28 @@ resources:
 <strong style="color: red; font-size: 20px;">FOR FIDELITY & WESTCAP EYES ONLY</strong>
 :::
 
-# Intro
+# Introduction and Key Findings
 
--   This page provides insight into three relatively young funds with minimal distributions to date
+-   This page provides analytical insights for three funds still in the J-curuve stage of fund life (vintage years 2019, 2021, 2023)
+
+-   We provide a condensed summary of the NAVcasts© followed by extensive modeling results and simulations of similar-styled funds
 
 -   We provide a straightforward portfolio summary analysis followed by:
 
-    -   Extensive modeling results
+-   Reliable NAVcast© estimates were obtained for all three funds
 
-    -   Simulations of similar styled funds with their respective modeling results
+-   As expected, NAVcast© values quickly incorporate public market movements and can result in both substantial discounts and premiums to estimates of GP-reported NAVs
 
--   We also provide a few stylized simulation examples at the end ...
+-   Simulations provide further evidence of correctly modeling the generated fund values and data generating parameter value choices
 
 # Executive Summary
 
 ...
 
-# Three Young Fund Analysis
+# Fund-level Analytics
+
+-   These estimates use the Fidelity Total Market Index Fund (FSKAX) as the market benchmark and the Fidelity MSCI Information Technology Index ETF as the comparable asset
+-   An explanation of the data matching simulations is within the Extensive Results section below
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Standard Portfolio Overview Analysis
@@ -38,6 +43,10 @@ resources:
 
 ::: {.callout-note collapse="true" icon="false"}
 ## Extensive Results: MCMC, & Simulation Matching
+
+A diagram explanation of the data matching simulations is displayed below
+
+![Data Matching Simulation Description](data_matching%20explenation.png)
 
 ::: {.callout-tip collapse="true" appearance="simple" icon="false"}
 ### Fund 1 (2019 Vintage)
@@ -105,26 +114,18 @@ resources:
 ::: {.callout-tip collapse="true" appearance="simple" icon="false"}
 #### MCMC Analysis - Data Matching Simulations
 
-[View full results screen ↗](html_docs/2023_fund_simulations/mcmc_results_for_site.html){target="_blank"}
+[View full results screen ↗](html_docs/2023_fund_simulations/mcmc_results_for_site_no_returns.html){target="_blank"}
 
 ```{=html}
-<iframe src="html_docs/2023_fund_simulations/mcmc_results_for_site.html" width="100%" height="600px"></iframe>
+<iframe src="html_docs/2023_fund_simulations/mcmc_results_for_site_no_returns.html" width="100%" height="600px"></iframe>
 ```
 :::
 :::
 :::
 
-# Stylized Example Simulations
+# Conclusions and Next Steps
 
-...
-
-# Future Visions
-
--   Currently, we need to develop a very robust quality control process
-
--   The next step would likely be running models over the weekend and providing results on the following Monday with daily naive updates through the week
-
--   At a later stage, we envision user uploads, and on-command modeling (something like the video)
+These results are for relatively young funds in a single and very volatile sector. In some ways these funds are edge cases that push the limits of the model, and we were reassured to have the model generate results that were both statistically reliable and intuitive. Before the model can go into automated production, we need to have a robust method for choosing the market benchmark and comparable asset. These choices sometimes have meaningful effects on model parameters and valuations. While there is probably not a "right" way to do this some choices will be better than others. Having an established process for this will be important. Input data quality control is another important factor. For example, the data we received had a positive cash flow for a capital call on Apr-21, 2023 for the 2019 vintage fund which probably should be a negative value. We are developing a cimple screening tool for flagging suspicious values. We have limited this analysis to weekly valuations. We plan to extend the analysis to include daily valuations using an intra-week extrapolation method. We are the process of building a user interface that allows for data uploads and on-demand model estimation after completing the quality control process.
 
 ```{=html}
 <video width="100%" autoplay loop controls>
@@ -132,11 +133,14 @@ resources:
   Your browser does not support the video tag.
 </video>
 ```
-
 <!-- ```{=html} -->
-<!-- <video width="100%" controls loop autoplay muted> -->
-<!--   <source src="/html_docs/videos/continuous_example_clip.mp4" type="video/mp4"> -->
-<!--   Your browser does not support the video tag. -->
-<!-- </video> -->
-<!-- ``` -->
 
+<!-- <video width="100%" controls loop autoplay muted> -->
+
+<!--   <source src="/html_docs/videos/continuous_example_clip.mp4" type="video/mp4"> -->
+
+<!--   Your browser does not support the video tag. -->
+
+<!-- </video> -->
+
+<!-- ``` -->

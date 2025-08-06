@@ -101,11 +101,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro">Intro</a></li>
+  <li><a href="#introduction-and-key-findings" id="toc-introduction-and-key-findings" class="nav-link active" data-scroll-target="#introduction-and-key-findings">Introduction and Key Findings</a></li>
   <li><a href="#executive-summary" id="toc-executive-summary" class="nav-link" data-scroll-target="#executive-summary">Executive Summary</a></li>
-  <li><a href="#three-young-fund-analysis" id="toc-three-young-fund-analysis" class="nav-link" data-scroll-target="#three-young-fund-analysis">Three Young Fund Analysis</a></li>
-  <li><a href="#stylized-example-simulations" id="toc-stylized-example-simulations" class="nav-link" data-scroll-target="#stylized-example-simulations">Stylized Example Simulations</a></li>
-  <li><a href="#future-visions" id="toc-future-visions" class="nav-link" data-scroll-target="#future-visions">Future Visions</a></li>
+  <li><a href="#fund-level-analytics" id="toc-fund-level-analytics" class="nav-link" data-scroll-target="#fund-level-analytics">Fund-level Analytics</a></li>
+  <li><a href="#conclusions-and-next-steps" id="toc-conclusions-and-next-steps" class="nav-link" data-scroll-target="#conclusions-and-next-steps">Conclusions and Next Steps</a></li>
   </ul>
 </nav>
     </div>
@@ -134,24 +133,27 @@ ul.task-list li input[type="checkbox"] {
 <div style="background-color: #ffeeee; border: 2px solid red; padding: 10px; text-align: center; margin-bottom: 30px;">
 <p><strong style="color: red; font-size: 20px;">FOR FIDELITY &amp; WESTCAP EYES ONLY</strong></p>
 </div>
-<section id="intro" class="level1">
-<h1>Intro</h1>
+<section id="introduction-and-key-findings" class="level1">
+<h1>Introduction and Key Findings</h1>
 <ul>
-<li><p>This page provides insight into three relatively young funds with minimal distributions to date</p></li>
-<li><p>We provide a straightforward portfolio summary analysis followed by:</p>
-<ul>
-<li><p>Extensive modeling results</p></li>
-<li><p>Simulations of similar styled funds with their respective modeling results</p></li>
-</ul></li>
-<li><p>We also provide a few stylized simulation examples at the end …</p></li>
+<li><p>This page provides analytical insights for three funds still in the J-curuve stage of fund life (vintage years 2019, 2021, 2023)</p></li>
+<li><p>We provide a condensed summary of the NAVcasts© followed by extensive modeling results and simulations of similar-styled funds</p></li>
+<li><p>We provide a straightforward portfolio summary analysis followed by:</p></li>
+<li><p>Reliable NAVcast© estimates were obtained for all three funds</p></li>
+<li><p>As expected, NAVcast© values quickly incorporate public market movements and can result in both substantial discounts and premiums to estimates of GP-reported NAVs</p></li>
+<li><p>Simulations provide further evidence of correctly modeling the generated fund values and data generating parameter value choices</p></li>
 </ul>
 </section>
 <section id="executive-summary" class="level1">
 <h1>Executive Summary</h1>
 <p>…</p>
 </section>
-<section id="three-young-fund-analysis" class="level1">
-<h1>Three Young Fund Analysis</h1>
+<section id="fund-level-analytics" class="level1">
+<h1>Fund-level Analytics</h1>
+<ul>
+<li>These estimates use the Fidelity Total Market Index Fund (FSKAX) as the market benchmark and the Fidelity MSCI Information Technology Index ETF as the comparable asset</li>
+<li>An explanation of the data matching simulations is within the Extensive Results section below</li>
+</ul>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -181,6 +183,13 @@ Extensive Results: MCMC, &amp; Simulation Matching
 </div>
 <div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
+<p>A diagram explanation of the data matching simulations is displayed below</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="data_matching explenation.png" class="img-fluid figure-img"></p>
+<figcaption>Data Matching Simulation Description</figcaption>
+</figure>
+</div>
 <div class="callout callout-style-simple callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -321,8 +330,8 @@ MCMC Analysis - Data Matching Simulations
 </div>
 <div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><a href="html_docs/2023_fund_simulations/mcmc_results_for_site.html" target="_blank">View full results screen ↗</a></p>
-<iframe src="html_docs/2023_fund_simulations/mcmc_results_for_site.html" width="100%" height="600px"></iframe>
+<p><a href="html_docs/2023_fund_simulations/mcmc_results_for_site_no_returns.html" target="_blank">View full results screen ↗</a></p>
+<iframe src="html_docs/2023_fund_simulations/mcmc_results_for_site_no_returns.html" width="100%" height="600px"></iframe>
 </div>
 </div>
 </div>
@@ -333,17 +342,9 @@ MCMC Analysis - Data Matching Simulations
 </div>
 </div>
 </section>
-<section id="stylized-example-simulations" class="level1">
-<h1>Stylized Example Simulations</h1>
-<p>…</p>
-</section>
-<section id="future-visions" class="level1">
-<h1>Future Visions</h1>
-<ul>
-<li><p>Currently, we need to develop a very robust quality control process</p></li>
-<li><p>The next step would likely be running models over the weekend and providing results on the following Monday with daily naive updates through the week</p></li>
-<li><p>At a later stage, we envision user uploads, and on-command modeling (something like the video)</p></li>
-</ul>
+<section id="conclusions-and-next-steps" class="level1">
+<h1>Conclusions and Next Steps</h1>
+<p>These results are for relatively young funds in a single and very volatile sector. In some ways these funds are edge cases that push the limits of the model, and we were reassured to have the model generate results that were both statistically reliable and intuitive. Before the model can go into automated production, we need to have a robust method for choosing the market benchmark and comparable asset. These choices sometimes have meaningful effects on model parameters and valuations. While there is probably not a “right” way to do this some choices will be better than others. Having an established process for this will be important. Input data quality control is another important factor. For example, the data we received had a positive cash flow for a capital call on Apr-21, 2023 for the 2019 vintage fund which probably should be a negative value. We are developing a cimple screening tool for flagging suspicious values. We have limited this analysis to weekly valuations. We plan to extend the analysis to include daily valuations using an intra-week extrapolation method. We are the process of building a user interface that allows for data uploads and on-demand model estimation after completing the quality control process.</p>
 <video width="100%" autoplay="" loop="" controls="">
   <source src="html_docs/videos/continuous_example_clip.mp4" type="video/mp4">
   Your browser does not support the video tag.
