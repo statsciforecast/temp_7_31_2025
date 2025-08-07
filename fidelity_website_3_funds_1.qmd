@@ -14,14 +14,14 @@ resources:
 
 -   We provide a condensed summary of the NAVcasts© followed by extensive modeling results and simulations of similar-styled funds
 
--   Reliable NAVcast© estimates were obtained for all three funds
+-   Reliable NAVcast™ estimates were obtained for all three funds
 
--   As expected, NAVcast© values quickly incorporate public market movements and can result in both substantial discounts and premiums to estimates of GP-reported NAVs
+-   As expected, NAVcast™ values quickly incorporate public market movements and can result in both substantial discounts and premiums to estimates of GP-reported NAVs
 
 -   Simulations provide further evidence of correctly modeling the generated fund values and data generating parameter value choices
 
 
-...
+
 
 # Fund-level Analytics
 
