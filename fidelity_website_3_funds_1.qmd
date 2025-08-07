@@ -10,7 +10,7 @@ resources:
 
 # Introduction and Key Findings
 
--   This page provides analytical insights for three funds still in the J-curuve stage of fund life (vintage years 2019, 2021, 2023)
+-   This page provides analytical insights for three funds still in the J-curve stage of fund life (vintage years 2019, 2021, 2023)
 
 -   We provide a condensed summary of the NAVcasts™ followed by extensive modeling results and simulations of similar-styled funds
 
